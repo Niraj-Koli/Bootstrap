@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"></script>
+
+        <title>Buttons</title>
+    </head>
+
+    <body>
+        <style>
+            hr {
+                border-color: black;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 70px;
+                font-family: lucida handwriting, cursive;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 50px;
+                font-family: lucida handwriting, cursive;
+            }
+        </style>
+
+        <hr />
+
+        <h1>Buttons</h1>
+
+        <hr />
+
+        <h2>Button Colors</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+
+        <hr />
+
+        <h2>Button Styles</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <a href="#" class="btn btn-info" role="button">Link</a>
+            <button type="submit" class="btn btn-info">Button</button>
+            <input type="button" class="btn btn-info" value="Input Button" />
+            <input type="submit" class="btn btn-info" value="Submit Button" />
+
+            <input type="reset" class="btn btn-info" value="Reset Button" />
+        </div>
+
+        <hr />
+
+        <h2>Button Outline</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <button type="button" class="btn btn-outline-primary">
+                Primary
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+                Secondary
+            </button>
+            <button type="button" class="btn btn-outline-success">
+                Success
+            </button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-warning">
+                Warning
+            </button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+            <button type="button" class="btn btn-outline-light text-dark">
+                Light
+            </button>
+        </div>
+
+        <hr />
+
+        <h2>Button Sizes</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <button type="button" class="btn btn-primary btn-lg">Large</button>
+            <button type="button" class="btn btn-primary btn-md">
+                Default
+            </button>
+            <button type="button" class="btn btn-primary btn-sm">Small</button>
+        </div>
+
+        <hr />
+
+        <h2>Button Blocks</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="d-grid gap-2 col-6 mx-auto my-3">
+                <button class="btn btn-primary" type="button">Alpha</button>
+                <button class="btn btn-primary" type="button">Beta</button>
+            </div>
+            <div class="d-grid gap-2 my-3">
+                <button class="btn btn-primary" type="button">Gamma</button>
+                <button class="btn btn-primary" type="button">Delta</button>
+            </div>
+            <div class="d-grid gap-2 d-md-block my-3">
+                <button class="btn btn-primary" type="button">Epsilon</button>
+                <button class="btn btn-primary" type="button">Zeta</button>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end my-3">
+                <button class="btn btn-primary me-md-2" type="button">
+                    Eta
+                </button>
+                <button class="btn btn-primary" type="button">Theta</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Button Status</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <button type="button" class="btn btn-primary">
+                Primary Button
+            </button>
+            <button type="button" class="btn btn-primary active">
+                Active Primary
+            </button>
+            <button type="button" class="btn btn-primary" disabled>
+                Disabled Primary
+            </button>
+            <a
+                href="#"
+                class="btn btn-primary disabled"
+                role="button"
+                aria-disabled="true"
+                >Disabled Link</a
+            >
+        </div>
+
+        <hr />
+
+        <h2>Spinning Buttons</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>
+            </button>
+
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>
+                Loading..
+            </button>
+
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-border spinner-border-sm"></span>
+                Loading..
+            </button>
+
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-grow spinner-grow-sm"></span>
+                Loading..
+            </button>
+        </div>
+
+        <hr />
+
+        <h2>Button Groups</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-info">Gojo</button>
+                <button type="button" class="btn btn-success">Zoro</button>
+                <button type="button" class="btn btn-warning">Gohan</button>
+                <button type="button" class="btn btn-danger">Levi</button>
+                <button type="button" class="btn btn-dark">Jinwoo</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-info">Gojo</button>
+                <button type="button" class="btn btn-outline-success">
+                    Zoro
+                </button>
+                <button type="button" class="btn btn-outline-warning">
+                    Gohan
+                </button>
+                <button type="button" class="btn btn-outline-danger">
+                    Levi
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                    Jinwoo
+                </button>
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Button Groups Sizes</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="btn-group btn-group-lg" role="group">
+                <button type="button" class="btn btn-info">Gojo</button>
+                <button type="button" class="btn btn-success">Zoro</button>
+                <button type="button" class="btn btn-warning">Gohan</button>
+                <button type="button" class="btn btn-danger">Levi</button>
+                <button type="button" class="btn btn-dark">Jinwoo</button>
+            </div>
+
+            <br /><br />
+
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-info">Gojo</button>
+                <button type="button" class="btn btn-success">Zoro</button>
+                <button type="button" class="btn btn-warning">Gohan</button>
+                <button type="button" class="btn btn-danger">Levi</button>
+                <button type="button" class="btn btn-dark">Jinwoo</button>
+            </div>
+
+            <br /><br />
+
+            <div class="btn-group btn-group-sm" role="group">
+                <button type="button" class="btn btn-info">Gojo</button>
+                <button type="button" class="btn btn-success">Zoro</button>
+                <button type="button" class="btn btn-warning">Gohan</button>
+                <button type="button" class="btn btn-danger">Levi</button>
+                <button type="button" class="btn btn-dark">Jinwoo</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Vertical Buttons</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="btn-group-vertical text-center" role="group">
+                <button type="button" class="btn btn-info">Gojo</button>
+                <button type="button" class="btn btn-success">Zoro</button>
+                <button type="button" class="btn btn-warning">Gohan</button>
+                <button type="button" class="btn btn-danger">Levi</button>
+                <button type="button" class="btn btn-dark">Jinwoo</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Vertical Nesting Button Groups</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="btn-group-vertical" role="group">
+                <div class="btn-group" role="group">
+                    <button
+                        type="button"
+                        class="btn btn-info dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Jujutsu Kaisen
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Gojo</a></li>
+                        <li><a class="dropdown-item" href="#">Yuta</a></li>
+                        <li><a class="dropdown-item" href="#">Sukana</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" role="group">
+                    <button
+                        type="button"
+                        class="btn btn-success dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        One Piece
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Zoro</a></li>
+                        <li><a class="dropdown-item" href="#">Luffy</a></li>
+                        <li><a class="dropdown-item" href="#">Sanji</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" role="group">
+                    <button
+                        type="button"
+                        class="btn btn-warning dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Dragon Ball Z
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Gohan</a></li>
+                        <li><a class="dropdown-item" href="#">Goku</a></li>
+                        <li><a class="dropdown-item" href="#">Trunks</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" role="group">
+                    <button
+                        type="button"
+                        class="btn btn-danger dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Attack On Titan
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Levi</a></li>
+                        <li><a class="dropdown-item" href="#">Eren</a></li>
+                        <li><a class="dropdown-item" href="#">Mikasa</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" role="group">
+                    <button
+                        type="button"
+                        class="btn btn-dark dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Solo Leveling
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Jinwoo</a></li>
+                        <li><a class="dropdown-item" href="#">Beru</a></li>
+                        <li><a class="dropdown-item" href="#">Igris</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Checkbox And Radio Buttons</h2>
+
+        <hr />
+        <div class="container text-center">
+            <div class="btn-group" role="group">
+                <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btncheck1"
+                    autocomplete="off" />
+                <label class="btn btn-outline-warning" for="btncheck1"
+                    >Kaizer</label
+                >
+
+                <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btncheck2"
+                    autocomplete="off" />
+                <label class="btn btn-outline-danger" for="btncheck2"
+                    >Dante</label
+                >
+
+                <input type="checkbox" class="btn-check" id="btncheck3" />
+                <label class="btn btn-outline-info" for="btncheck3">Vivy</label>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="btn-group" role="group">
+                <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="btnradio1"
+                    autocomplete="off"
+                    checked />
+                <label class="btn btn-outline-warning" for="btnradio1"
+                    >Kaizer</label
+                >
+
+                <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="btnradio2" />
+                <label class="btn btn-outline-danger" for="btnradio2"
+                    >Dante</label
+                >
+
+                <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="btnradio3"
+                    autocomplete="off" />
+                <label class="btn btn-outline-info" for="btnradio3">Vivy</label>
+            </div>
+        </div>
+
+        <hr />
+
+        <h2 id="h2">Button Toolbar</h2>
+
+        <hr />
+
+        <div class="container text-center fs-2 m-auto">
+            <div
+                class="btn-toolbar"
+                role="toolbar"
+                aria-label="Toolbar with button groups">
+                <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="First group">
+                    <button type="button" class="btn btn-primary">1</button>
+                    <button type="button" class="btn btn-warning">2</button>
+                    <button type="button" class="btn btn-danger">3</button>
+                    <button type="button" class="btn btn-success">4</button>
+                </div>
+                <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Second group">
+                    <button type="button" class="btn btn-secondary">5</button>
+                    <button type="button" class="btn btn-info">6</button>
+                    <button type="button" class="btn btn-dark">7</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-light">8</button>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+    </body>
+</html>

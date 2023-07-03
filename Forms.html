@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"></script>
+
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <style>
+            hr {
+                border-color: black;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 70px;
+                font-family: lucida handwriting, cursive;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 50px;
+                font-family: lucida handwriting, cursive;
+            }
+        </style>
+
+        <hr />
+
+        <h1>Forms</h1>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email:</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter Email"
+                        name="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Password:</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Enter Password"
+                        name="password" />
+                </div>
+
+                <div class="form-group form-check">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="remember"
+                        name="checkbox" />
+                    <label for="remember">Remember Me</label>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Inline Form</h2>
+
+        <hr />
+
+        <div class="container">
+            <form class="form-inline">
+                <label for="emails" class="mb-2 mr-sm-2 form-label"
+                    >Email:</label
+                >
+                <input
+                    type="email"
+                    class="form-control mb-2 mr-sm-2"
+                    id="emails"
+                    placeholder="Enter Email"
+                    name="email" />
+
+                <label for="passwords" class="mb-2 mr-sm-2 form-label"
+                    >Password:</label
+                >
+                <input
+                    type="password"
+                    class="form-control mb-2 mr-sm-2"
+                    id="passwords"
+                    placeholder="Enter Password"
+                    name="password" />
+
+                <div class="form-check mb-2 mr-sm-2">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="remembers"
+                        name="checkbox" />
+                    <label for="remembers" class="form-label"
+                        >Remember Me</label
+                    >
+                </div>
+
+                <div class="mb-2 mr-sm-2">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Form Grid</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="emailss"
+                            placeholder="Enter Email"
+                            name="email" />
+                    </div>
+
+                    <div class="col">
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="passwordss"
+                            placeholder="Enter Password"
+                            name="password" />
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary mt-3">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Form Validation</h2>
+
+        <hr />
+
+        <div class="container">
+            <form class="was-validated">
+                <div class="form-group">
+                    <label for="name" class="form-label">Username:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter Username"
+                        name="username"
+                        required />
+                    <div class="valid-feedback">Valid Username</div>
+                    <div class="invalid-feedback">Username Not Found</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailsss" class="form-label">Email:</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="emailsss"
+                        placeholder="Enter Email"
+                        name="email"
+                        required />
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid Email</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordsss" class="form-label"
+                        >Password:</label
+                    >
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="passwordsss"
+                        placeholder="Enter password"
+                        name="password"
+                        required />
+                    <div class="valid-feedback">Correct Password</div>
+                    <div class="invalid-feedback">Wrong Password</div>
+                </div>
+
+                <div class="form-group form-check text-center">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="checkbox"
+                        required />
+                    Remember My Credentials
+                </div>
+
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Input</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="username" class="form-label">Username:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Username"
+                        id="username"
+                        name="username" />
+                </div>
+
+                <div class="form-group">
+                    <label for="emailssss" class="form-label">Email:</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Enter Email"
+                        id="emailssss"
+                        name="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordssss" class="form-label"
+                        >Password:</label
+                    >
+                    <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Enter Password"
+                        id="passwordssss"
+                        name="password" />
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Textarea</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea
+                        class="form-control"
+                        rows="5"
+                        id="address"
+                        name="address"></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Checkbox</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <form>
+                <div class="form-check">
+                    <label for="alpha" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="alpha"
+                            name="alpha"
+                            value="alpha" />Alpha
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label for="delta" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="delta"
+                            name="delta"
+                            value="delta"
+                            checked />Delta
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label for="gamma" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="gamma"
+                            name="gamma"
+                            value="gamma" />Gamma
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label for="omega" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="omega"
+                            name="omega"
+                            value="omega" />Omega
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label for="beta" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="beta"
+                            name="beta"
+                            value="beta"
+                            disabled />Beta
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Inline Checkbox</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-check-inline">
+                    <label for="alphas" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="alphas"
+                            name="alphas"
+                            value="alphas" />Alpha
+                    </label>
+                </div>
+
+                <div class="form-check-inline">
+                    <label for="deltas" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="deltas"
+                            name="deltas"
+                            value="deltas"
+                            checked />Delta
+                    </label>
+                </div>
+
+                <div class="form-check-inline">
+                    <label for="gammas" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="gammas"
+                            name="gammas"
+                            value="gammas" />Gamma
+                    </label>
+                </div>
+
+                <div class="form-check-inline">
+                    <label for="omegas" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="omegas"
+                            name="omegas"
+                            value="omegas" />Omega
+                    </label>
+                </div>
+
+                <div class="form-check-inline">
+                    <label for="betas" class="form-check-label">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="betas"
+                            name="betas"
+                            value="betas"
+                            disabled />Beta
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Radio Buttons</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <form>
+                <div class="form-check">
+                    <label for="gojo" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="gojo"
+                            name="gojo"
+                            value="gojo" />Gojo
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label for="jinwoo" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="jinwoo"
+                            name="jinwoo"
+                            value="jinwoo"
+                            checked />Jinwoo
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label for="Gohan" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="Gohan"
+                            name="Gohan"
+                            value="Gohan" />Gohan
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label for="zoro" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="zoro"
+                            name="zoro"
+                            value="zoro" />Zoro
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <label for="Levi" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="Levi"
+                            name="Levi"
+                            value="Levi"
+                            disabled />Levi
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Inline Radio Buttons</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-check-inline">
+                    <label for="gojo" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="gojo"
+                            name="gojo"
+                            value="gojo" />Gojo
+                    </label>
+                </div>
+
+                <div class="form-check-inline">
+                    <label for="jinwoo" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="jinwoo"
+                            name="jinwoo"
+                            value="jinwoo"
+                            checked />Jinwoo
+                    </label>
+                </div>
+
+                <div class="form-check-inline">
+                    <label for="gohan" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="gohan"
+                            name="gohan"
+                            value="gohan" />Gohan
+                    </label>
+                </div>
+
+                <div class="form-check-inline">
+                    <label for="zoro" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="zoro"
+                            name="zoro"
+                            value="zoro" />Zoro
+                    </label>
+                </div>
+
+                <div class="form-check-inline">
+                    <label for="levi" class="form-check-label">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="levi"
+                            name="levi"
+                            value="levi"
+                            disabled />Levi
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Select Menu</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="character" class="form-label"
+                        >Favorite Anime Character</label
+                    >
+                    <select
+                        class="form-control"
+                        id="character"
+                        name="character">
+                        <option selected>Characters</option>
+                        <option value="gojo">Gojo</option>
+                        <option value="gohan">Gohan</option>
+                        <option value="levi">Levi</option>
+                        <option value="zoro">Zoro</option>
+                        <option value="jinwoo">Jinwoo</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Multiple Select Menu</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="anime" class="form-label">Favorite Anime</label>
+                    <select
+                        multiple
+                        class="form-control"
+                        id="anime"
+                        name="anime">
+                        <option selected>Anime</option>
+                        <option value="one">One Piece</option>
+                        <option value="dragon">Jujutsu Kaisen</option>
+                        <option value="dragon">Dragon Ball Z</option>
+                        <option value="dragon">Solo Leveling</option>
+                        <option value="titan">Attack On Titan</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Form Control Sizes</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Small Form Control"
+                        name="small" />
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Default Form Control"
+                        name="default" />
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        placeholder="Large form control"
+                        name="large" />
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Form Control Plain Text</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Default Form Control"
+                        name="default" />
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="text"
+                        class="form-control-plaintext"
+                        placeholder="  Form Control With Plain Text"
+                        name="plain" />
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Range And File</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="range" class="form-label">Volume</label>
+                    <input
+                        type="range"
+                        class="form-control-range"
+                        id="range"
+                        name="range" />
+                </div>
+                <hr />
+                <div class="form-group">
+                    <label for="file" class="form-label">Drop Your File</label>
+                    <input
+                        type="file"
+                        class="form-control-file border"
+                        id="file"
+                        name="file" />
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Input Groups</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Username"
+                        id="username"
+                        name="username" />
+                </div>
+
+                <div class="input-group mb-3">
+                    <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Your Email"
+                        id="email"
+                        name="email" />
+                    <div class="input-group-append">
+                        <span class="input-group-text">@example.com</span>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Input Group Sizes</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Small</span>
+                    </div>
+                    <input type="text" class="form-control" />
+                </div>
+            </form>
+
+            <br />
+
+            <form>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Default</span>
+                    </div>
+                    <input type="text" class="form-control" />
+                </div>
+            </form>
+
+            <br />
+
+            <form>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Large</span>
+                    </div>
+                    <input type="text" class="form-control" />
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Multiple Input Group Pend</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Person's</span>
+                    </div>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name" />
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name" />
+                </div>
+            </form>
+
+            <br />
+
+            <form>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Alpha</span>
+                        <span class="input-group-text">Beta</span>
+                        <span class="input-group-text">Gamma</span>
+                        <span class="input-group-text">Delta</span>
+                        <span class="input-group-text">Epsilon</span>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Zeta" />
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Kappa" />
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Lambda" />
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Omicron" />
+                    <input type="text" class="form-control" placeholder="Pi" />
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Input Group Checkbox & Radio Buttons</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <label for="characters" class="form-label"
+                    >Name Of The Character</label
+                >
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="checkbox" id="characters" />
+                        </div>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Favorite Character" />
+                </div>
+            </form>
+
+            <br />
+
+            <form>
+                <label for="animes" class="form-label">Anime's Name</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" id="animes" />
+                        </div>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Favorite Anime" />
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Input Group Dropdown</h2>
+
+        <hr />
+
+        <div class="container">
+            <form>
+                <label class="form-label">Anime Game</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button
+                            type="button"
+                            class="btn btn-outline-primary dropdown-toggle"
+                            data-toggle="dropdown">
+                            Anime
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Naruto</a>
+                            <a href="#" class="dropdown-item">Dragon Ball</a>
+                            <a href="#" class="dropdown-item">Tokyo Ghoul</a>
+                            <a href="#" class="dropdown-item"
+                                >Attack On Titan</a
+                            >
+                            <a href="#" class="dropdown-item"
+                                >Fullmetal Alchemist</a
+                            >
+                            <a href="#" class="dropdown-item">One Punch Man</a>
+                            <a href="#" class="dropdown-item">Deathnote</a>
+                        </div>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Anime's Characters" />
+                </div>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Input Group Buttons</h2>
+
+        <hr />
+
+        <div class="container">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-primary" type="button">
+                        Submit
+                    </button>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" />
+            </div>
+
+            <br />
+
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" />
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Click</button>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="input-group">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Goals" />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Save</button>
+                    <button class="btn btn-danger" type="button">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Custom Checkbox</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <form>
+                <div class="custom-control custom-checkbox">
+                    <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="customcheckbox"
+                        name="customcheckbox" />
+                    <label for="customcheckbox" class="custom-control-label"
+                        >Custom Checkbox</label
+                    >
+                </div>
+
+                <input
+                    type="checkbox"
+                    id="defaultcheckbox"
+                    name="defaultcheckbox" />
+                <label for="defaultcheckbox" class="form-label"
+                    >Default Checkbox</label
+                >
+                <br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Custom Radio Button</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <form>
+                <div class="custom-control custom-radio">
+                    <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customradio"
+                        name="customradio" />
+                    <label for="customradio" class="custom-control-label"
+                        >Custom Radio</label
+                    >
+                </div>
+
+                <input type="radio" id="defaultradio" name="defaultradio" />
+                <label for="defaultradio" class="form-label"
+                    >Default Radio</label
+                >
+                <br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Custom Switch</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <form>
+                <div class="custom-control custom-switch">
+                    <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="switch"
+                        name="switch" />
+                    <label for="switch" class="custom-control-label"
+                        >Toggle me</label
+                    >
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Inline Custom</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <form>
+                <div
+                    class="custom-control custom-checkbox custom-control-inline">
+                    <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="customcheckboxs"
+                        name="customcheckbox" />
+                    <label for="customcheckboxs" class="custom-control-label"
+                        >Custom Checkbox</label
+                    >
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customradios"
+                        name="customradio" />
+                    <label for="customradios" class="custom-control-label"
+                        >Custom Radio</label
+                    >
+                </div>
+
+                <div class="custom-control custom-switch custom-control-inline">
+                    <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="switchs"
+                        name="switch" />
+                    <label for="switchs" class="custom-control-label"
+                        >Toggle me</label
+                    >
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Custom Select Menu</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <form>
+                <select name="characters" class="custom-select">
+                    <option selected>Dreams</option>
+                    <option value="alpha">Alpha</option>
+                    <option value="delta">Delta</option>
+                    <option value="gamma">Gamma</option>
+                    <option value="omega">Omega</option>
+                    <option value="beta">Beta</option>
+                </select>
+                <br /><br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Custom Select Menu Sizes</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <form>
+                <select
+                    name="characters"
+                    class="custom-select custom-select-sm">
+                    <option selected>Small Custom Select Menu</option>
+                    <option value="alpha">Alpha</option>
+                    <option value="delta">Delta</option>
+                    <option value="gamma">Gamma</option>
+                    <option value="omega">Omega</option>
+                    <option value="beta">Beta</option>
+                </select>
+
+                <br /><br />
+
+                <select name="characters" class="custom-select">
+                    <option selected>Default Custom Select Menu</option>
+                    <option value="alpha">Alpha</option>
+                    <option value="delta">Delta</option>
+                    <option value="gamma">Gamma</option>
+                    <option value="omega">Omega</option>
+                    <option value="beta">Beta</option>
+                </select>
+
+                <br /><br />
+
+                <select
+                    name="characters"
+                    class="custom-select custom-select-lg">
+                    <option selected>Large Custom Select Menu</option>
+                    <option value="alpha">Alpha</option>
+                    <option value="delta">Delta</option>
+                    <option value="gamma">Gamma</option>
+                    <option value="omega">Omega</option>
+                    <option value="beta">Beta</option>
+                </select>
+            </form>
+        </div>
+
+        <hr />
+
+        <h2>Custom Range And File</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <form>
+                <label for="customrange" class="form-label"
+                    >Custom Range:</label
+                >
+                <input
+                    type="range"
+                    class="custom-range"
+                    id="customrange"
+                    name="customrange" />
+                <br />
+                <label for="defaultrange">Default Range:</label>
+                <br />
+                <input
+                    type="range"
+                    id="defaultrange"
+                    id="defaultrange"
+                    name="defaultrange" />
+                <br /><br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <hr />
+
+            <form>
+                <div class="custom-file">
+                    <label for="customfile" class="form-label"
+                        >Custom File</label
+                    >
+                    <input
+                        type="file"
+                        class="custom-file-input"
+                        id="customfile"
+                        name="customfile" />
+                    <label for="customfile" class="custom-file-label"
+                        >Choose File</label
+                    >
+                </div>
+
+                <p class="container card bg-warning text-center">
+                    Script Is Needed To Show The Name Of The File In Custom File
+                    Tag
+                </p>
+                <br />
+                <label for="defaultfile" class="form-label"
+                    >Default File:</label
+                >
+                <br />
+                <input type="file" id="defaultfile" name="defaultfile" />
+                <br /><br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+    </body>
+</html>

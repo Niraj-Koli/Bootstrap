@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"></script>
+
+        <title>Scrollspy</title>
+    </head>
+
+    <style>
+        hr {
+            border-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 70px;
+            font-family: lucida handwriting, cursive;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            font-family: lucida handwriting, cursive;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-family: arial, sans-serif;
+        }
+
+        nav {
+            font-size: 30px;
+        }
+
+        img {
+            width: 40%;
+            height: 300px;
+        }
+    </style>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <hr />
+
+        <h1>Scrollspy</h1>
+
+        <hr />
+
+        <div class="text-center">
+            <nav
+                class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-center nav-justified">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gojo">Gojo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jinwoo">Jinwoo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gohan">Gohan</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a
+                            role="button"
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbardrop"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            >Shinobi</a
+                        >
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#naruto"
+                                    >Naruto</a
+                                >
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#sasuke"
+                                    >Sasuke</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="gojo" class="container bg-info text-center">
+                <hr />
+
+                <h2>Gojo</h2>
+
+                <hr />
+
+                <img src="Images/GojoAlpha.jpg" alt="Gojo" /><br />
+
+                <hr />
+
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quod, quidem? Ea explicabo hic aliquid rem ex aspernatur
+                    blanditiis officiis totam aut, doloremque eligendi nulla
+                    inventore. Nesciunt doloremque, consequatur nam illum
+                    assumenda quos reiciendis. Dolor deserunt, labore cumque
+                    fuga sunt exercitationem eaque itaque autem fugit ratione
+                    repellat eius expedita explicabo! Harum similique, debitis
+                    quod praesentium dicta mollitia commodi facilis beatae ipsam
+                    nulla? Ex excepturi dolorum nihil, itaque praesentium aut
+                    commodi culpa quidem omnis voluptas quo quam iure obcaecati
+                    atque voluptatem voluptates quia tenetur similique ad dicta,
+                    consequuntur, dolorem dolores molestias! Adipisci aut
+                    repellat delectus est quibusdam nobis tenetur tempore
+                    asperiores tempora?
+                </p>
+
+                <hr />
+            </div>
+
+            <div id="jinwoo" class="container bg-dark text-center text-white">
+                <hr />
+
+                <h2>Jinwoo</h2>
+
+                <hr />
+
+                <img src="Images/SungJinwooAlpha.jpg" alt="Jinwoo" /><br />
+
+                <hr />
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    culpa reprehenderit fugit laborum at cum beatae voluptates
+                    non quibusdam, numquam fuga exercitationem, repellendus
+                    ducimus quo, eveniet amet perspiciatis pariatur ipsam qui
+                    ipsa eum esse corporis est. In pariatur placeat fugiat aut
+                    maiores provident aperiam dolorum! Magnam id optio quidem
+                    velit blanditiis architecto eligendi nisi minima,
+                    repudiandae quam veniam at autem hic, expedita error nam
+                    enim praesentium a, mollitia beatae! Eius sit consectetur
+                    laborum quasi ipsam animi excepturi odit minima aut ipsum
+                    labore illo nisi, numquam inventore voluptatibus iusto est
+                    rem, harum natus error dolor distinctio voluptas. Deserunt,
+                    quos? Quibusdam, distinctio?
+                </p>
+
+                <hr />
+            </div>
+
+            <div id="gohan" class="container bg-warning text-center">
+                <hr />
+
+                <h2>Gohan</h2>
+
+                <hr />
+
+                <img src="Images/GohanDelta.png" alt="Gohan" /><br />
+
+                <hr />
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi iusto, laboriosam mollitia voluptatum eos saepe
+                    dicta! Recusandae repudiandae voluptate quaerat quis facere
+                    perspiciatis architecto voluptatem cupiditate illum at in
+                    reiciendis cumque placeat nemo quod, et nihil aliquid ex
+                    magni repellendus dolore iure esse? Aperiam corporis, sit
+                    soluta, atque quaerat, necessitatibus vitae officia adipisci
+                    debitis mollitia sunt minima vero inventore laudantium nam
+                    maiores! Doloremque harum consequatur magnam voluptatibus
+                    quibusdam laboriosam laborum fuga eligendi, ipsa id corrupti
+                    repellat facere, similique molestias saepe recusandae
+                    doloribus numquam qui velit laudantium. Similique molestiae
+                    ad ducimus tenetur quaerat labore et, voluptates amet esse!
+                    Totam, quaerat porro!
+                </p>
+
+                <hr />
+            </div>
+
+            <div id="naruto" class="container bg-danger text-center text-white">
+                <hr />
+
+                <h2>Naruto</h2>
+
+                <hr />
+
+                <img src="Images/NarutoBeta.png" alt="Naruto" /><br />
+
+                <hr />
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique laudantium obcaecati atque ipsa voluptate quidem,
+                    quibusdam fuga quo eveniet assumenda cum vel hic!
+                    Exercitationem perspiciatis vitae ut, debitis voluptate
+                    accusantium iure veritatis voluptatibus repellat
+                    dignissimos! Nihil, rem? Quam sit in alias non quia rem
+                    molestiae possimus rerum tempora quo! Expedita alias laborum
+                    iste illo sed praesentium cum molestias voluptates,
+                    quibusdam dignissimos nisi quos vitae aspernatur ratione
+                    quod sit hic quidem eaque dolore modi repellat reprehenderit
+                    eum odit dolores. Doloremque impedit veniam, atque aliquam
+                    laboriosam nihil perferendis, ducimus nesciunt incidunt fuga
+                    facere reiciendis consequuntur sequi autem, repudiandae
+                    placeat sint odio accusamus.
+                </p>
+
+                <hr />
+            </div>
+
+            <div id="sasuke" class="container bg-success text-center">
+                <hr />
+
+                <h2>Sasuke</h2>
+
+                <hr />
+
+                <img src="Images/SasukeEpsilon.png" alt="Sasuke" /><br />
+
+                <hr />
+
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Laboriosam obcaecati, molestiae facere sint hic unde ut
+                    explicabo, fuga maiores non eaque voluptates distinctio?
+                    Earum debitis itaque possimus repudiandae temporibus
+                    voluptatibus, sunt dolorem nemo maiores quis nam eveniet
+                    quas fugit neque cupiditate nesciunt sapiente assumenda
+                    numquam suscipit aliquid, nostrum id. Perspiciatis rerum,
+                    repudiandae quasi error ipsam similique exercitationem ipsum
+                    explicabo labore magnam nulla est eos dolores nihil id
+                    consequatur nobis aut, suscipit molestias. Quisquam,
+                    numquam. Enim necessitatibus cum, dolorum eveniet et nihil
+                    dicta cupiditate quas! Adipisci iusto deleniti vero soluta
+                    cumque cupiditate ex ea dolorum debitis nesciunt
+                    reprehenderit nostrum, qui corrupti.
+                </p>
+
+                <hr />
+            </div>
+        </div>
+
+        <hr />
+    </body>
+</html>

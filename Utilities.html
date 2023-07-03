@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"></script>
+
+        <title>Utilities</title>
+    </head>
+
+    <body>
+        <style>
+            hr {
+                border-color: black;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 70px;
+                font-family: lucida handwriting, cursive;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 50px;
+                font-family: lucida handwriting, cursive;
+            }
+
+            .border {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                margin: 6px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 20px;
+                font-style: italic;
+            }
+
+            li {
+                font-size: 20px;
+                font-style: italic;
+            }
+        </style>
+
+        <hr />
+
+        <h1>Borders</h1>
+
+        <hr />
+
+        <div class="container text-center">
+            <span class="border border-dark"></span>
+            <span class="border border-dark border-0"></span>
+            <span class="border border-dark border-top-0"></span>
+            <span class="border border-dark border-end-0"></span>
+            <span class="border border-dark border-bottom-0"></span>
+            <span class="border border-dark border-start-0"></span>
+        </div>
+
+        <hr />
+
+        <h2>Borders Color</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <span class="border border-primary"></span>
+            <span class="border border-secondary"></span>
+            <span class="border border-success"></span>
+            <span class="border border-danger"></span>
+            <span class="border border-warning"></span>
+            <span class="border border-info"></span>
+            <span class="border border-light"></span>
+            <span class="border border-dark"></span>
+            <span class="border border-white"></span>
+        </div>
+
+        <hr />
+
+        <h2>Border Opacity</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="border border-dark p-2 mb-2"></div>
+            <div class="border border-dark p-2 mb-2 border-opacity-75"></div>
+            <div class="border border-dark p-2 mb-2 border-opacity-50"></div>
+            <div class="border border-dark p-2 mb-2 border-opacity-25"></div>
+            <div class="border border-dark p-2 border-opacity-10"></div>
+        </div>
+
+        <hr />
+
+        <h2>Rounded Borders</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <span class="border border-dark rounded"></span>
+            <span class="border border-dark rounded-0"></span>
+            <span class="border border-dark rounded-1"></span>
+            <span class="border border-dark rounded-2"></span>
+            <span class="border border-dark rounded-3"></span>
+            <span class="border border-dark rounded-4"></span>
+            <span class="border border-dark rounded-5"></span>
+            <span class="border border-dark rounded-top"></span>
+            <span class="border border-dark rounded-end"></span>
+            <span class="border border-dark rounded-bottom"></span>
+            <span class="border border-dark rounded-start"></span>
+            <span class="border border-dark rounded-circle"></span>
+            <span class="border border-dark rounded-pill"></span>
+        </div>
+
+        <hr />
+
+        <h2>Float And Clear</h2>
+
+        <hr />
+
+        <div class="container">
+            <div class="clearfix">
+                <span class="float-start">Left</span>
+                <span class="float-end">Right</span>
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Center Alignment</h2>
+
+        <hr />
+
+        <div class="container">
+            <div class="mx-auto bg-info text-center" style="width: 100px">
+                Centered
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Width</h2>
+
+        <hr />
+
+        <div class="container">
+            <div class="w-25 text-center bg-info">Width 25%</div>
+            <br />
+            <div class="w-50 text-center bg-info">Width 50%</div>
+            <br />
+            <div class="w-75 text-center bg-info">Width 75%</div>
+            <br />
+            <div class="w-100 text-center bg-info">Width 100%</div>
+            <br />
+            <div class="mw-100 text-center bg-info">Max Width 100%</div>
+            <br />
+        </div>
+
+        <hr />
+
+        <h2>Height</h2>
+
+        <hr />
+
+        <div class="container" style="height: 200px; background-color: white">
+            <div class="h-25 d-inline-block p-2 m-2 bg-warning">Height 25%</div>
+            <div class="h-50 d-inline-block p-2 m-2 bg-warning">Height 50%</div>
+            <div class="h-75 d-inline-block p-2 m-2 bg-warning">Height 75%</div>
+            <div class="h-100 d-inline-block p-2 m-2 bg-warning">
+                Height 100%
+            </div>
+            <div
+                class="mh-100 d-inline-block p-2 m-2 bg-warning"
+                style="height: 500px">
+                Max Height 100%
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Margin And Padding</h2>
+
+        <hr />
+
+        <div class="container">
+            <p>
+                <strong>
+                    Bootstrap 4 has a wide range of responsive margin and
+                    padding utility classes. They work for all breakpoints:
+                    xs(<=576px), sm(>=576px), md(>=768px), lg(>=992px) or
+                    xl(>=1200px): The classes are used in the format:
+                    {property}{sides}-{size} for xs and
+                    {property}{sides}-{breakpoint}-{size} for sm, md, lg, and
+                    xl.
+                </strong>
+            </p>
+
+            <hr />
+
+            <p>
+                <strong>Where property is one of:</strong>
+            </p>
+
+            <ul>
+                <li>m - sets margin</li>
+                <li>p - sets padding</li>
+            </ul>
+
+            <hr />
+
+            <p>
+                <strong>Where sides is one of:</strong>
+            </p>
+
+            <ul>
+                <li>t - sets margin-top or padding-top</li>
+                <li>b - sets margin-bottom or padding-bottom</li>
+                <li>l - sets margin-left or padding-left</li>
+                <li>r - sets margin-right or padding-right</li>
+                <li>
+                    x - sets both padding-left and padding-right or margin-left
+                    and margin-right
+                </li>
+                <li>
+                    y - sets both padding-top and padding-bottom or margin-top
+                    and margin-bottom
+                </li>
+                <li>
+                    blank - sets a margin or padding on all 4 sides of the
+                    element
+                </li>
+            </ul>
+
+            <hr />
+
+            <p>
+                <strong>Where size is one of:</strong>
+            </p>
+
+            <ul>
+                <li>0 - sets margin or padding to 0</li>
+                <li>
+                    1 - sets margin or padding to .25rem (4px if font-size is
+                    16px)
+                </li>
+                <li>
+                    2 - sets margin or padding to .5rem (8px if font-size is
+                    16px)
+                </li>
+                <li>
+                    3 - sets margin or padding to 1rem (16px if font-size is
+                    16px)
+                </li>
+                <li>
+                    4 - sets margin or padding to 1.5rem (24px if font-size is
+                    16px)
+                </li>
+                <li>
+                    5 - sets margin or padding to 3rem (48px if font-size is
+                    16px)
+                </li>
+                <li>auto - sets margin to auto</li>
+            </ul>
+
+            <hr />
+
+            <p>
+                <strong
+                    >Note: margins can also be negative, by adding an "n" in
+                    front of size:</strong
+                >
+            </p>
+
+            <ul>
+                <li>n1 - sets margin to -.25rem (-4px if font-size is 16px)</li>
+                <li>n2 - sets margin to -.5rem (-8px if font-size is 16px)</li>
+                <li>n3 - sets margin to -1rem (-16px if font-size is 16px)</li>
+                <li>
+                    n4 - sets margin to -1.5rem (-24px if font-size is 16px)
+                </li>
+                <li>n5 - sets margin to -3rem (-48px if font-size is 16px)</li>
+            </ul>
+        </div>
+
+        <hr />
+
+        <h2>Shadows</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="shadow-none p-4 mb-4 bg-light">No Shadow</div>
+            <div class="shadow-sm p-4 mb-4 bg-white">Small Shadow</div>
+            <div class="shadow p-4 mb-4 bg-white">Default Shadow</div>
+            <div class="shadow-lg p-4 mb-4 bg-white">Large Shadow</div>
+        </div>
+
+        <hr />
+    </body>
+</html>

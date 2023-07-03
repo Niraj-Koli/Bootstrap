@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"></script>
+
+        <title>Collapse</title>
+    </head>
+
+    <body>
+        <style>
+            hr {
+                border-color: black;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 70px;
+                font-family: lucida handwriting, cursive;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 50px;
+                font-family: lucida handwriting, cursive;
+            }
+        </style>
+
+        <hr />
+
+        <h1>Collapsible</h1>
+
+        <hr />
+
+        <div class="container text-center">
+            <button
+                type="button"
+                class="btn btn-warning"
+                data-bs-toggle="collapse"
+                data-bs-target="#kaizer"
+                aria-expanded="false"
+                aria-controls="kaizer">
+                Kaizer
+            </button>
+            <div id="kaizer" class="collapse multi-collapse">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Temporibus aliquam incidunt suscipit ab tenetur aut quod
+                laudantium recusandae beatae porro officia, ex debitis sequi
+                quibusdam. Id, a. Dicta asperiores mollitia commodi minus quis
+                officiis quae quos magnam ratione et sunt natus itaque harum
+                ullam veniam quibusdam, molestias, eius totam perspiciatis?
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container text-center">
+            <a
+                role="button"
+                class="btn btn-danger"
+                data-bs-toggle="collapse"
+                href="#dante"
+                aria-expanded="false"
+                aria-controls="dante">
+                Dante</a
+            >
+
+            <div id="dante" class="collapse collapse-horizontal multi-collapse">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Temporibus aliquam incidunt suscipit ab tenetur aut quod
+                laudantium recusandae beatae porro officia, ex debitis sequi
+                quibusdam. Id, a. Dicta asperiores mollitia commodi minus quis
+                officiis quae quos magnam ratione et sunt natus itaque harum
+                ullam veniam quibusdam, molestias, eius totam perspiciatis?
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container text-center">
+            <button
+                type="button"
+                class="btn btn-info"
+                data-bs-toggle="collapse"
+                data-bs-target=".multi-collapse"
+                aria-expanded="false"
+                aria-controls="kaizer dante">
+                Both
+            </button>
+        </div>
+
+        <hr />
+
+        <h2>Accordion</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="accordion" id="accordionAlpha">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#nero1"
+                            aria-expanded="true"
+                            aria-controls="nero1">
+                            Nero
+                        </button>
+                    </h2>
+                    <div
+                        id="nero1"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="accordionAlpha">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae deserunt dolorum laborum blanditiis
+                            voluptate porro sit alias vitae aliquam accusamus
+                            nulla voluptates quis ducimus animi maxime officia
+                            facilis odio, rerum exercitationem. Deleniti neque
+                            iste repudiandae odio quidem enim numquam. Dolorem
+                            corrupti iure sapiente consequatur earum ipsa velit
+                            porro molestiae obcaecati.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#vivy1"
+                            aria-expanded="true"
+                            aria-controls="vivy1">
+                            Vivy
+                        </button>
+                    </h2>
+                    <div
+                        id="vivy1"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="accordionAlpha">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae deserunt dolorum laborum blanditiis
+                            voluptate porro sit alias vitae aliquam accusamus
+                            nulla voluptates quis ducimus animi maxime officia
+                            facilis odio, rerum exercitationem. Deleniti neque
+                            iste repudiandae odio quidem enim numquam. Dolorem
+                            corrupti iure sapiente consequatur earum ipsa velit
+                            porro molestiae obcaecati.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#hertz1"
+                            aria-expanded="true"
+                            aria-controls="hertz1">
+                            Hertz
+                        </button>
+                    </h2>
+                    <div
+                        id="hertz1"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="accordionAlpha">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae deserunt dolorum laborum blanditiis
+                            voluptate porro sit alias vitae aliquam accusamus
+                            nulla voluptates quis ducimus animi maxime officia
+                            facilis odio, rerum exercitationem. Deleniti neque
+                            iste repudiandae odio quidem enim numquam. Dolorem
+                            corrupti iure sapiente consequatur earum ipsa velit
+                            porro molestiae obcaecati.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Accordion Flush</h2>
+
+        <hr />
+
+        <div class="container text-center">
+            <div class="accordion accordion-flush" id="accordianBeta">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#nero2"
+                            aria-expanded="true"
+                            aria-controls="nero2">
+                            Nero
+                        </button>
+                    </h2>
+                    <div
+                        id="nero2"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="accordianBeta">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae deserunt dolorum laborum blanditiis
+                            voluptate porro sit alias vitae aliquam accusamus
+                            nulla voluptates quis ducimus animi maxime officia
+                            facilis odio, rerum exercitationem. Deleniti neque
+                            iste repudiandae odio quidem enim numquam. Dolorem
+                            corrupti iure sapiente consequatur earum ipsa velit
+                            porro molestiae obcaecati.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#vivy2"
+                            aria-expanded="true"
+                            aria-controls="vivy2">
+                            Vivy
+                        </button>
+                    </h2>
+                    <div
+                        id="vivy2"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="accordianBeta">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae deserunt dolorum laborum blanditiis
+                            voluptate porro sit alias vitae aliquam accusamus
+                            nulla voluptates quis ducimus animi maxime officia
+                            facilis odio, rerum exercitationem. Deleniti neque
+                            iste repudiandae odio quidem enim numquam. Dolorem
+                            corrupti iure sapiente consequatur earum ipsa velit
+                            porro molestiae obcaecati.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#hertz2"
+                            aria-expanded="true"
+                            aria-controls="hertz2">
+                            Hertz
+                        </button>
+                    </h2>
+                    <div
+                        id="hertz2"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="accordianBeta">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae deserunt dolorum laborum blanditiis
+                            voluptate porro sit alias vitae aliquam accusamus
+                            nulla voluptates quis ducimus animi maxime officia
+                            facilis odio, rerum exercitationem. Deleniti neque
+                            iste repudiandae odio quidem enim numquam. Dolorem
+                            corrupti iure sapiente consequatur earum ipsa velit
+                            porro molestiae obcaecati.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+    </body>
+</html>
